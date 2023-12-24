@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
     const username = document.getElementById("username").value;
+     localStorage.setItem("user-name", `${username}`);
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("ConfirmPassword").value;
