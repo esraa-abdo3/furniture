@@ -1,0 +1,127 @@
+:root {
+    --main-color: #3e2723;
+    --main-padding: 80px;
+    --main-border-radius:20px;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+.cont {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .cont {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cont {
+        width: 950px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cont {
+        width: 1170px;
+    }
+}
+
+
+.cart{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #eee;
+    
+}
+
+.cart .cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cart .cont .text{
+     width: 600px;
+    /* padding: 50px; */ 
+    /* border: 1px solid black; */
+}
+.cart .cont .text h2{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.cart .cont .text p{
+    color: #777;
+    line-height: 2;
+}
+.cart .cont .text .span{
+    padding: 30px 0;
+  
+}
+.cart .cont .text .span span:not(#number){
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid black;
+    font-size: 17px;
+}
+.cart .cont .text .span span i{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cart .cont .text .add span{
+    border-radius: 10px;
+    cursor: pointer;
+    display:inline-block;
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.cart .cont .text .add span:hover{
+    transform: scale(1.1);
+
+}
+
+
+.cart .cont .img img{
+    width: 80%;
+    max-width: 100%;
+ 
+}
+
